@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background: radial-gradient(circle at top,#061a33,#02040a);
+color:#cfe8ff;
+overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+text-align:center;
+padding:50px 20px 20px;
+}
+
+header h1{
+font-size:2rem;
+color:#4db5ff;
+letter-spacing:2px;
+text-shadow:0 0 10px rgba(77,181,255,0.6);
+}
+
+header p{
+opacity:0.7;
+margin-top:8px;
+}
+
+/* AVATAR */
+.avatar{
+display:flex;
+justify-content:center;
+margin-top:10px;
+}
+
+.avatar img{
+width:130px;
+height:130px;
+border-radius:50%;
+border:2px solid #4db5ff;
+box-shadow:0 0 20px rgba(0,140,255,0.5);
+object-fit:cover;
+}
+
+/* CONTAINER */
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter: blur(10px);
+border:1px solid rgba(77,181,255,0.25);
+border-radius:16px;
+padding:20px;
+margin-top:18px;
+box-shadow:0 0 15px rgba(0,140,255,0.12);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 0 25px rgba(0,140,255,0.25);
+}
+
+.card h2{
+color:#4db5ff;
+margin-bottom:10px;
+}
+
+/* HOBI */
+.hobi{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.hobi span{
+padding:7px 12px;
+background:rgba(0,140,255,0.12);
+border:1px solid rgba(77,181,255,0.3);
+border-radius:10px;
+font-size:0.9rem;
+}
+
+/* PROJECT */
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:12px;
+margin-top:10px;
+}
+
+.project{
+border-radius:14px;
+overflow:hidden;
+border:1px solid rgba(77,181,255,0.25);
+background:rgba(0,80,160,0.08);
+transition:0.3s;
+}
+
+.project:hover{
+transform:scale(1.04);
+box-shadow:0 0 18px rgba(77,181,255,0.4);
+}
+
+.project img{
+width:100%;
+height:100px;
+object-fit:cover;
+}
+
+.project a{
+display:block;
+text-align:center;
+padding:10px;
+color:#7fd1ff;
+text-decoration:none;
+font-weight:500;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:25px;
+opacity:0.5;
+font-size:0.85rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+header h1{font-size:1.5rem;}
+.avatar img{width:110px;height:110px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>AZZAM PORTFOLIO</h1>
+<p>Modern Personal Profile System</p>
+</header>
+
+<div class="avatar">
+<img src="muka.jpg" alt="Profile">
+</div>
+
+<div class="container">
+
+<!-- ABOUT -->
+<div class="card">
+<h2>About Me</h2>
+<p>
+Nama: <b>Azzam Maulana</b><br>
+Status: Mahasiswa<br>
+Dunia: Web Development & Teknologi Digital<br><br>
+Saya tertarik membangun tampilan web modern, clean, dan interaktif.
+</p>
+</div>
+
+<!-- HOBI -->
+<div class="card">
+<h2>Hobi</h2>
+<div class="hobi">
+<span>Ngoding</span>
+<span>UI/UX Design</span>
+<span>Gaming</span>
+<span>Editing</span>
+<span>AI Exploration</span>
+</div>
+</div>
+
+<!-- PROJECT -->
+<div class="card">
+<h2>Project</h2>
+
+<div class="projects">
+
+<div class="project">
+<img src="foto1.jpg">
+<a href="https://azzam385.github.io/HBD-/Flowers.html">Karangan Bunga</a>
+</div>
+
+<div class="project">
+<img src="foto2.jpg">
+<a href="https://azzam385.github.io/Azzam385/">Hati (I love You)</a>
+</div>
+
+<div class="project">
+<img src="foto3.jpg">
+<a href="https://azzam385.github.io/happy-birthday-to-you-/">hadiah ultah</a>
+</div>
+
+<div class="project">
+<img src="foto4.jpg">
+<a href="https://azzam385.github.io/Websekolah11/">Memories SMP NU</a>
+</div>
+
+<div class="project">
+<img src="foto5.jpg">
+<a href="https://azzam385.github.io/Nyobamusic/">pemutar musik</a>
+</div>
+
+<div class="project">
+<img src="foto6.jpg">
+<a href="https://azzam385.github.io/Pencatat-uang/">Pencatat keuangan</a>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+© 2026 Cyber Portfolio • Clean Modern UI
+</footer>
+
+</body>
+</html>
